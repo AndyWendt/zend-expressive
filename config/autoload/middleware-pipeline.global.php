@@ -10,6 +10,7 @@ return [
             Helper\UrlHelperMiddleware::class => Helper\UrlHelperMiddlewareFactory::class,
             TestMiddleware::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
             \App\Middleware\UuidMiddleware::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
+            \App\Middleware\RequestTimeMiddleware::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
         ],
     ],
     // This can be used to seed pre- and/or post-routing middleware
@@ -45,6 +46,7 @@ return [
                 Helper\ServerUrlMiddleware::class,
                 TestMiddleware::class,
                 \App\Middleware\UuidMiddleware::class,
+                \App\Middleware\RequestTimeMiddleware::class,
             ],
             'priority' => 10000,
         ],
