@@ -18,6 +18,6 @@ class UuidMiddleware
             echo 'Exception: ' . $e->getMessage();
         }
 
-        return $response->withHeader('X-REQUEST_UUID', $uuid);
+        return $response->withHeader('X-REQUEST_UUID', $uuid->toString());
     }
 }
