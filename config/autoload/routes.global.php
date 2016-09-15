@@ -28,8 +28,8 @@ return [
         [
             'name' => 'user.list',
             'path' => '/users',
-            'middleware' => App\Action\UserListAction::class,
+            'middleware' => \App\Action\UserListAction::class,
             'allowed_methods' => ['GET'],
-        ],
+        ]
     ],
 ];
