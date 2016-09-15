@@ -8,6 +8,7 @@ return [
         ],
         'factories' => [
             App\Action\HomePageAction::class => App\Action\HomePageFactory::class,
+            App\Action\UserListAction::class => App\Action\UserListFactory::class,
         ],
     ],
 
